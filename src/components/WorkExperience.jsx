@@ -41,14 +41,14 @@ const Circle = () => {
 
 const Pillar = () => {
   return (
-    <div className='bg-gradient-to-r from-blue-500 to-teal-500 rounded-t-full rounded-b-full w-2 h-24 sm:h-32 md:h-full mx-auto'>
+    <div className='bg-gradient-to-r from-blue-500 to-teal-500 rounded-t-full rounded-b-full w-2 h-48 sm:h-40 md:h-full mx-auto'>
     </div>
   );
 }
 
 const EventCard = ({ heading, date }) => {
   return (
-    <div className='transition duration-300 ease-in-out transform hover:-translate-y-1 hover:shadow-2xl flex flex-col gap-y-2 justify-center border shadow-md rounded-xl p-4 w-48 sm:w-60 lg:w-90 justify-self-end overflow-hidden'>
+    <div className='transition duration-300 ease-in-out transform hover:-translate-y-1 hover:shadow-2xl flex flex-col justify-center border shadow-md rounded-xl p-4 w-54 sm:w-54 md:w-60 lg:w-90 justify-self-end overflow-hidden'>
       <div className='font-bold text-base sm:text-lg md:text-xl text-yellow-400'>{heading}</div>
       <div className='text-xs sm:text-sm md:text-base text-white'>{date}</div>
     </div>
