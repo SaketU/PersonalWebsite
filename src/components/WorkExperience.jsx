@@ -16,7 +16,7 @@ const WorkExperience = () => {
           {events.map((event, key) => {
             return (
               <Fragment key={key}>
-                <div className='grid grid-cols-[1fr_auto_1fr] gap-x-4 items-center mx-auto'>
+                <div className='grid grid-cols-[1fr_auto_1fr] gap-x-2 sm:gap-x-4 md:gap-x-6 items-center mx-auto'>
                   <EventCard heading={event.heading} date={event.date} />
                   <Pillar />
                   <Description subHeading={event.subHeading} description={event.description} />
@@ -34,21 +34,21 @@ const WorkExperience = () => {
 
 const Circle = () => {
   return (
-    <div className='bg-gradient-to-r from-blue-500 to-teal-500 rounded-full w-4 h-4 bg-blue-500 mx-auto'>
+    <div className='bg-gradient-to-r from-blue-500 to-teal-500 rounded-full w-4 h-4 mx-auto'>
     </div>
   );
 }
 
 const Pillar = () => {
   return (
-    <div className='bg-gradient-to-r from-blue-500 to-teal-500 rounded-t-full rounded-b-full w-2 h-full bg-blue-500 mx-auto'>
+    <div className='bg-gradient-to-r from-blue-500 to-teal-500 rounded-t-full rounded-b-full w-2 h-full mx-auto'>
     </div>
   );
 }
 
 const EventCard = ({ heading, date }) => {
   return (
-    <div className='transition duration-300 ease-in-out transform hover:-translate-y-1 hover:shadow-2xl flex flex-col gap-y-2 justify-center border shadow-md rounded-xl p-4 w-64 justify-self-end overflow-hidden'>
+    <div className='transition duration-300 ease-in-out transform hover:-translate-y-1 hover:shadow-2xl flex flex-col gap-y-2 justify-center border shadow-md rounded-xl p-4 w-48 sm:w-60 lg:w-90 justify-self-end overflow-hidden'>
       <div className='font-bold text-lg text-yellow-400'>{heading}</div>
       <div className='text-sm text-white'>{date}</div>
     </div>
@@ -57,7 +57,7 @@ const EventCard = ({ heading, date }) => {
 
 const Description = ({ subHeading, description }) => {
   return (
-    <div className='transition duration-300 ease-in-out transform hover:-translate-y-1 hover:shadow-2xl flex flex-col gap-y-2 justify-center border shadow-md rounded-xl p-4 w-120 max-w-lg overflow-hidden'>
+    <div className='transition duration-300 ease-in-out transform hover:-translate-y-1 hover:shadow-2xl flex flex-col gap-y-2 justify-center border shadow-md rounded-xl p-4 w-120 sm:w-96 xs:w-full justify-self-endmax-w-lg overflow-hidden'>
       <div className='font-bold text-lg text-orange-400'>{subHeading}</div>
       <div className='text-sm text-white'>{description}</div>
     </div>
