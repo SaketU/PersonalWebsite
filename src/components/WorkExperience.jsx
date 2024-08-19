@@ -34,14 +34,14 @@ const WorkExperience = () => {
 
 const Circle = () => {
   return (
-    <div className='bg-gradient-to-r from-blue-500 to-teal-500 rounded-full w-4 h-4 mx-auto'>
+    <div className='bg-gradient-to-r from-blue-500 to-teal-500 rounded-full w-3 h-3 sm:w-4 sm:h-4 mx-auto'>
     </div>
   );
 }
 
 const Pillar = () => {
   return (
-    <div className='bg-gradient-to-r from-blue-500 to-teal-500 rounded-t-full rounded-b-full w-2 h-full mx-auto'>
+    <div className='bg-gradient-to-r from-blue-500 to-teal-500 rounded-t-full rounded-b-full w-2 h-24 sm:h-32 md:h-full mx-auto'>
     </div>
   );
 }
