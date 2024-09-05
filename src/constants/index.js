@@ -1,6 +1,7 @@
 import { instagram, linkedin } from "../assets";
 import ObjectDetection from "../assets/ObjectDetectionCover.png";
 import WebsiteCover from "../assets/WebsiteCover.png";
+import storytunescover from "../assets/storytunescover.jpg";
 
 export const navLinks = [
   { id: "home", title: "Home" },
@@ -63,6 +64,19 @@ export const projects = [
         "Made a personal website that showcases my skills, projects, and activities.",
       categories: "Web Development, HTML, Tailwind CSS, JavaScript, React",
       detailsLink: "https://github.com/SaketU/PersonalWebsite",
+    },
+  },
+  {
+    id: "project-3",
+    title: "Storytunes",
+    description: "Spotify generated Instagram stories",
+    image: storytunescover,
+    modalContent: {
+      title: "Storytunes",
+      description:
+        "Storytunes is a platform designed for Instagram users to effortlessly find the perfect soundtrack for their stories. By entering a theme or mood, users receive a song recommendation from Spotify that aligns with their chosen theme, enhancing their Instagram story experience.",
+      categories: "Next.js, Axios.js, Express.js, Spotify API",
+      detailsLink: "https://github.com/SaketU/Storytunes.git",
     },
   },
 ];
